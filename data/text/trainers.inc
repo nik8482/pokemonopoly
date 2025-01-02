@@ -4779,3 +4779,15 @@ Route134_Text_HudsonPostBattle:
 	.string "Our boat drifted out to sea.\p"
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
+
+MonopolyTower_Text_IanIntro:
+	.string "IAN: I just caught my\n"
+	.string "first pokemon!\p"
+	.string "soon I'll be able\n"
+	.string "to rank!$"
+
+MonopolyTower_Text_IanOutro:
+	.string "IAN: Ah, need to grind more!$"
+
+MonopolyTower_Text_IanDefeated:
+	.string "IAN: I'll train harder.$"
