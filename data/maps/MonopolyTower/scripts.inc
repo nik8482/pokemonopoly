@@ -75,8 +75,10 @@ MonopolyTower_Map_Text_Ali_Yes:
 
 MonopolyTower_Map_Text_Ali_Outro:
 	.string "ALI: Go in the cave\n"
-	.string "on your left to start\l"
+	.string "on your right to start\l"
 	.string "your journey!\p"
+	.string "ALI: It will take you to\n"
+	.string "the Monopoly Village!\p"
 	.string "ALI: Goodluck!$"
 
 MonopolyTower_Map_Text_Ali_Masterball:
@@ -87,8 +89,7 @@ Text_ReceivedDragonite:
 	.string "{PLAYER} received a Dragonite!$"
 
 MonopolyTower_Text_TownSign:
-	.string "Monopoly Cave\n"
-	.string "“The Cave of Fortune”$"
+	.string "Path to the Monopoly Village$"
 
 MonopolyTower_Text_NoPokemon:
 	.string "Talk to Ali to get\n"

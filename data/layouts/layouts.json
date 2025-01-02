@@ -4430,6 +4430,36 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MonopolyTower_1F/border.bin",
       "blockdata_filepath": "data/layouts/MonopolyTower_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MONOPOLY_TOWER_2F",
+      "name": "MonopolyTower_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MonopolyTower_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MonopolyTower_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_MONOPOLY_VILLAGE",
+      "name": "RouteMonopolyVillage_Layout",
+      "width": 4,
+      "height": 5,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/RouteMonopolyVillage/border.bin",
+      "blockdata_filepath": "data/layouts/RouteMonopolyVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_MONOPOLY_TOWN",
+      "name": "MonopolyTown_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MonopolyTown/border.bin",
+      "blockdata_filepath": "data/layouts/MonopolyTown/map.bin"
     }
   ]
 }

@@ -1060,3 +1060,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MonopolyTower/scripts.inc"
 
 	.include "data/maps/MonopolyTower_1F/scripts.inc"
+
+	.include "data/maps/MonopolyTower_2F/scripts.inc"
+
+	.include "data/maps/RouteMonopolyVillage/scripts.inc"
+
+	.include "data/maps/MonopolyTown/scripts.inc"

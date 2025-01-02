@@ -93,7 +93,9 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "MonopolyTower"
+    "MonopolyTower",
+    "RouteMonopolyVillage",
+    "MonopolyTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -585,7 +587,8 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
-    "MonopolyTower_1F"
+    "MonopolyTower_1F",
+    "MonopolyTower_2F"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

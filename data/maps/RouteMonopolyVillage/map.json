@@ -1,0 +1,47 @@
+{
+  "id": "MAP_ROUTE_MONOPOLY_VILLAGE",
+  "name": "RouteMonopolyVillage",
+  "layout": "LAYOUT_ROUTE_MONOPOLY_VILLAGE",
+  "music": "MUS_RG_PALLET",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_MONOPOLY_TOWN",
+      "offset": -13,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_MONOPOLY_TOWER_2F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_MONOPOLY_TOWER_2F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

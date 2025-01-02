@@ -4791,3 +4791,9 @@ MonopolyTower_Text_IanOutro:
 
 MonopolyTower_Text_IanDefeated:
 	.string "IAN: I'll train harder.$"
+
+MonopolyTower_Text_JeromeIntro:
+	.string "JEROME: WHERE THE ABGs at?$"
+
+MonopolyTower_Text_JeromeOutro:
+	.string "JEROME: ...$"
