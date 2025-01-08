@@ -588,7 +588,8 @@
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
     "MonopolyTower_1F",
-    "MonopolyTower_2F"
+    "MonopolyTower_2F",
+    "MonopolyTown_Mart"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

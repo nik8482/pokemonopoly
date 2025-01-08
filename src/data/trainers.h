@@ -3508,9 +3508,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_VICTOR] =
     {
         .trainerClass = TRAINER_CLASS_WINSTRATE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .trainerName = _("VICTOR"),
+        .trainerName = _("NIK"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,

@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MonopolyTown_NPC_EventScript",
       "flag": "0"
     }
   ],
@@ -116,17 +116,10 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 23,
-      "elevation": 0,
-      "dest_map": "MAP_MONOPOLY_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 25,
       "y": 35,
       "elevation": 0,
-      "dest_map": "MAP_MONOPOLY_TOWN",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     },
     {
@@ -135,10 +128,25 @@
       "elevation": 0,
       "dest_map": "MAP_MONOPOLY_TOWN",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_MONOPOLY_TOWN_MART",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 24,
+      "elevation": 0,
+      "var": "NIK_HARSHI_LORE",
+      "var_value": "1",
+      "script": "MonopolyTown_NikBattle_Trigger"
+    }
   ],
   "bg_events": [
     {

@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MonopolyTown/border.bin",
       "blockdata_filepath": "data/layouts/MonopolyTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_MONOPOLY_TOWN_MART",
+      "name": "MonopolyTown_Mart_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MonopolyTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/MonopolyTown_Mart/map.bin"
     }
   ]
 }
