@@ -3866,17 +3866,17 @@ static const struct TrainerMonNoItemCustomMoves sParty_AnnaAndMeg5[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Victor[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Nik[] = {
     {
     .iv = 25,
-    .lvl = 16,
-    .species = SPECIES_TAILLOW,
+    .lvl = 47,
+    .species = SPECIES_CHARIZARD,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
     .iv = 25,
-    .lvl = 16,
-    .species = SPECIES_ZIGZAGOON,
+    .lvl = 42,
+    .species = SPECIES_ALAKAZAM,
     .heldItem = ITEM_ORAN_BERRY
     }
 };

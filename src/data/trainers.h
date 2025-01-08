@@ -3507,14 +3507,14 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_VICTOR] =
     {
-        .trainerClass = TRAINER_CLASS_WINSTRATE,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .trainerName = _("NIK"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = ITEM_DEFAULT_MOVES(sParty_Victor),
+        .party = ITEM_DEFAULT_MOVES(sParty_Nik),
     },
 
     [TRAINER_MIGUEL_1] =

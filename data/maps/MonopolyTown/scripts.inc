@@ -1,21 +1,55 @@
-.set LOCALID_NIK, 4
+.set LOCALID_NIK, 3
 
 MonopolyTown_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MonopolyTown_OnTransition
 	.byte 0
+
+MonopolyTown_OnTransition::
+	map_script_2 NIK_HARSHI_LORE, 1, MonopolyTown_NikBattle_Trigger
+	releaseall
+	end
+
+MonopolyTown_NikBattle_Trigger::
+	lock
+	applymovement LOCALID_NIK, MonopolyTown_Nik_Confront
+	waitmovement 0
+	trainerbattle_single TRAINER_VICTOR, MonopolyTower_Text_IanIntro, MonopolyTower_Text_IanOutro, MonopolyTower_Nik_Set_Var
+	releaseall
+	end
+
+MonopolyTower_Nik_Set_Var::
+	setvar NIK_HARSHI_LORE, 2
+	msgbox Monopolytown_Nik_Defeat_Text, MSGBOX_NPC
+	giveitem ITEM_RARE_CANDY 1
+	releaseall
+	end
+
+MonopolyTown_Nik_Confront::
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
 
 MonopolyTown_Map_EventScript_Nik::
     lock
     faceplayer
 	goto_if_unset FLAG_NIK_LORE, MonopolyTown_Map_EventScript_Nik_Lore
-    msgbox MonopolyTown_Nik_Outro, MSGBOX_NPC
-	release
-	end
+	goto_if_eq NIK_HARSHI_LORE, 2, MonopolyTown_Nik_Outro
+	releaseall
+	end	
 
 MonopolyTown_Map_EventScript_Nik_Lore::
 	msgbox MonopolyTown_Text_Nik_Intro, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq MonopolyTown_Script_PlayerAnsweredYes
 	msgbox MonopolyTown_Script_PlayerAnsweredNo, MSGBOX_NPC
+	release
+	end
+
+MonopolyTown_Nik_Outro::
+	msgbox MonopolyTown_Nik_Outro_text, MSGBOX_NPC
 	release
 	end
 
@@ -62,8 +96,8 @@ MonopolyTown_Text_Nik_Yes::
 	.string "NIK: Please visit if you\n"
 	.string "need anything.$"
 
-MonopolyTown_Nik_Outro::
-	.string "NIK: Enjoy your stay!$"
+MonopolyTown_Nik_Outro_text::
+	.string "NIK: sigh.. back to work.$"
 
 MonopolyTown_DawatSign::
 	msgbox MonopolyTown_DawatSignText, MSGBOX_SIGN
@@ -118,20 +152,23 @@ MonopolyTown_NPC_Text::
 	.string "Capturing Pokemon is\n"
 	.string "a great way to make friends!$"
 
-MonopolyTown_NikBattle_Trigger::
+Monopolytown_Nik_Defeat_Text::
+	.string "NIK: You're strong!\p"
+	.string "NIK: Here, take this!\p"
+	.string "NIK: It's a rare candy!$"
+
+MonopolyTown_GateKeeper_Kabi_Script::
 	lock
-	applymovement LOCALID_NIK, MonopolyTown_Nik_Confront
+	faceplayer
+	msgbox MonopolyTown_GateKeeper_Kabi_Text_1, MSGBOX_NPC
+	applymovement OBJ_EVENT_ID_PLAYER, MonopolyTown_GateKeeper_Kabi_Movement
 	waitmovement 0
-	trainerbattle_single TRAINER_VICTOR, MonopolyTower_Text_IanIntro, MonopolyTower_Text_IanOutro
-	msgbox MonopolyTower_Text_IanDefeated, MSGBOX_DEFAULT
-	setvar NIK_HARSHI_LORE, 2
 	release
 	end
 
-MonopolyTown_Nik_Confront::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	face_right
+MonopolyTown_GateKeeper_Kabi_Text_1::
+	.string "GATEKEEPER KABI: You can't pass!$"
+
+MonopolyTown_GateKeeper_Kabi_Movement::
+	walk_down
 	step_end
