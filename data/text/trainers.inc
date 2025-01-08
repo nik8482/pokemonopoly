@@ -4780,20 +4780,17 @@ Route134_Text_HudsonPostBattle:
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
 
-MonopolyTower_Text_IanIntro:
-	.string "IAN: I just caught my\n"
-	.string "first pokemon!\p"
-	.string "soon I'll be able\n"
-	.string "to rank!$"
+VSSeeker_Text_BatteryNotChargedNeedXSteps::
+	.string "The battery isn't charged enough.\p"
+	.string "No. of steps required to fully\n"
+	.string "charge the battery: {STR_VAR_1}{PAUSE_UNTIL_PRESS}$"
 
-MonopolyTower_Text_IanOutro:
-	.string "IAN: Ah, need to grind more!$"
+VSSeeker_Text_NoTrainersWithinRange::
+	.string "There are no Trainers within range\n"
+	.string "who can battle…\p"
+	.string "The VS Seeker was turned off.{PAUSE_UNTIL_PRESS}$"
 
-MonopolyTower_Text_IanDefeated:
-	.string "IAN: I'll train harder.$"
-
-MonopolyTower_Text_JeromeIntro:
-	.string "JEROME: WHERE THE ABGs at?$"
-
-MonopolyTower_Text_JeromeOutro:
-	.string "JEROME: ...$"
+VSSeeker_Text_TrainersNotReady::
+	.string "The other Trainers don't appear\n"
+	.string "to be ready for battle.\p"
+	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
