@@ -20,9 +20,3 @@ MonopolyTower_2F_EventScript_ItemQuickClaw::
 	finditem ITEM_QUICK_CLAW
 	setflag EVENT_QUICK_CLAW_FOUND
 	end
-
-MonopolyTower_Text_JeromeIntro::
-	.string "JEROME: Where the AGBs at?$"
-
-MonopolyTower_Text_JeromeOutro::
-	.string "JEROME: ...$"
