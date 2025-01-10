@@ -1163,3 +1163,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MonopolyTown/scripts.inc"
 
 	.include "data/maps/MonopolyTown_Mart/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/AbdiHouse_1F/scripts.inc"

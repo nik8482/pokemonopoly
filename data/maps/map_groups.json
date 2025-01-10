@@ -33,7 +33,8 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_IndoorMonopolyTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -626,5 +627,9 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup_IndoorMonopolyTown": [
+    "NewMap1",
+    "AbdiHouse_1F"
   ]
 }

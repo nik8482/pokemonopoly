@@ -34,7 +34,7 @@ MonopolyTower_Map_Event_Script_PlayerAnsweredNo::
 	msgbox Text_ReceivedDragonite, MSGBOX_DEFAULT
 	waitfanfare
 	msgbox MonopolyTower_Map_Text_Ali_Masterball, MSGBOX_NPC
-	giveitem ITEM_MASTER_BALL, 2
+	giveitem ITEM_MASTER_BALL, 1
 	setvar VAR_ALI_POKEMON, 1
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_ALI_GIVEN

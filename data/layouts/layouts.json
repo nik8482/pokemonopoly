@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MonopolyTown_Mart/border.bin",
       "blockdata_filepath": "data/layouts/MonopolyTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABDI_HOUSE_1F",
+      "name": "AbdiHouse_1F_Layout",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/AbdiHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AbdiHouse_1F/map.bin"
     }
   ]
 }
