@@ -16,14 +16,14 @@ MonopolyTown_NikBattle_Trigger::
 	delay 80
 	applymovement LOCALID_NIK, MonopolyTown_Nik_Confront
 	waitmovement 0
-	trainerbattle_single TRAINER_VICTOR, MonopolyTower_Text_IanIntro, MonopolyTower_Text_IanOutro, MonopolyTower_Nik_Set_Var
+	trainerbattle_single TRAINER_VICTOR, MonopolyTown_Text_NikIntro, MonopolyTower_Text_NikOutro, MonopolyTower_Nik_Set_Var
 	releaseall
 	end
 
 MonopolyTower_Nik_Set_Var::
 	setvar NIK_HARSHI_LORE, 2
 	msgbox Monopolytown_Nik_Defeat_Text, MSGBOX_NPC
-	giveitem ITEM_RARE_CANDY 1
+	giveitem ITEM_LEFTOVERS 1
 	releaseall
 	end
 
@@ -39,7 +39,7 @@ MonopolyTown_Map_EventScript_Nik::
     lock
     faceplayer
 	goto_if_unset FLAG_NIK_LORE, MonopolyTown_Map_EventScript_Nik_Lore
-	goto_if_eq NIK_HARSHI_LORE, 2, MonopolyTown_Nik_Outro
+	goto_if_eq NIK_HARSHI_LORE, 3, MonopolyTown_Nik_Outro
 	msgbox MonopolyTown_Nik_Outro_text_2, MSGBOX_NPC
 	releaseall
 	end	
@@ -162,9 +162,17 @@ MonopolyTown_NPC_Text::
 	.string "a great way to make friends!$"
 
 Monopolytown_Nik_Defeat_Text::
+	.string "NIK: You've taught me a great lesson.\p"
+	.string "NIK: I'll be sure to work harder\p"
 	.string "NIK: You're strong!\p"
-	.string "NIK: Here, take this!\p"
-	.string "NIK: It's a rare candy!$"
+	.string "NIK: I underestimated your\n"
+	.string "power.\p"
+	.string "NIK: Maybe you could be the one\n"
+	.string "to save our town.\p"
+	.string "NIK: Here, take this as a token\n"
+	.string "of my appreciation.\p"
+	.string "NIK: It might help you\n"
+	.string "on your journey.$"
 
 MonopolyTown_GateKeeper_Kabi_Script::
 	lock

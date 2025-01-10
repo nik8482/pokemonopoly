@@ -4794,6 +4794,7 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
+
 MonopolyTower_Text_IanIntro:
 	.string "IAN: I just caught my\n"
 	.string "first pokemon!\p"
@@ -4811,3 +4812,14 @@ MonopolyTower_Text_JeromeIntro:
 
 MonopolyTower_Text_JeromeOutro:
 	.string "JEROME: ...$"
+
+MonopolyTown_Text_NikIntro:
+	.string "NIK: What did you just\n"
+	.string "say to HARSHI?\p"
+	.string "....\p"
+	.string "NIK: You snitched on me.\p"
+	.string "NIK: I knew you couldn't be\n"
+	.string "trusted!$"
+
+MonopolyTower_Text_NikOutro:
+	.string "NIK: sigh .. well done.$"
