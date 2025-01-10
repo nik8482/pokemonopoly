@@ -2,7 +2,7 @@
   "id": "MAP_MONOPOLY_TOWER_2F",
   "name": "MonopolyTower_2F",
   "layout": "LAYOUT_MONOPOLY_TOWER_2F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_SEVII_DUNGEON",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -10,7 +10,7 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [

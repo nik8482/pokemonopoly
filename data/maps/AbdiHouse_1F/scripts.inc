@@ -77,17 +77,50 @@ AbdiNeal_Cutscene_Txt_2::
 
 
 AbdiHouse1F_AbdiBattle::
-	trainerbattle_single TRAINER_KEVIN, AbdiHouse1F_Text_AbdiIntro, AbdiHouse1F_Text_AbdiOutro
-	msgbox MonopolyTower_Text_JeromeOutro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_KEVIN, AbdiHouse1F_Text_AbdiIntro, AbdiHouse1F_Text_AbdiOutro, AbdiHouse1F_TriggerExit_Abdi
+	msgbox AbdiHouse1F_Text_AbdiOutro, MSGBOX_DEFAULT
 	release
 	end
 
 AbdiHouse1F_NealBattle::
-	trainerbattle_single TRAINER_FRANKLIN, AbdiHouse1F_Text_NealIntro, AbdiHouse1F_Text_NealOutro
-	msgbox MonopolyTower_Text_JeromeOutro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_FRANKLIN, AbdiHouse1F_Text_NealIntro, AbdiHouse1F_Text_NealOutro, AbdiHouse1F_TriggerExit_Neal
+	msgbox AbdiHouse1F_Text_NealOutro, MSGBOX_DEFAULT
 	release
 	end
 
+AbdiHouse1F_TriggerExit_Abdi::
+	setflag FLAG_ABDI_DEFEATED
+	goto_if_set FLAG_NEAL_DEFEATED, AbdiHouse1F_Exit
+	release
+	end
+
+AbdiHouse1F_TriggerExit_Neal::
+	setflag FLAG_NEAL_DEFEATED
+	goto_if_set FLAG_ABDI_DEFEATED, AbdiHouse1F_Exit
+	release
+	end
+
+AbdiHouse1F_Exit::
+	lock
+	msgbox AbdiHouse1F_Text_Exit, MSGBOX_NPC
+
+	
+	release
+	end
+
+AbdiHouse1F_Text_Exit::
+	.string "NEAL: {PLAYER} is stronger than\n"
+	.string "I thought.\p"
+	.string "NEAL: ABDI lets get out of here\p"
+	.string "ABDI: I'll warn the others.$"
+
+AbdiHouse1F_NealBattle_FlagSet::
+	setflag FLAG_NEAL_DEFEATED
+	end
+
+AbdiHouse1F_AbdiBattle_FlagSet::
+	setflag FLAG_ABDI_DEFEATED
+	end
 
 AbdiHouse1F_Text_AbdiIntro::
 	.string "ABDI: Pokemon are born to\n"
@@ -103,4 +136,4 @@ AbdiHouse1F_Text_NealIntro::
 	.string "NEAL: Go back to where you came from!$"
 
 AbdiHouse1F_Text_NealOutro::
-	.string "NEAL: You're strong for your kind.\p"
+	.string "NEAL: You're strong for your kind.$"
