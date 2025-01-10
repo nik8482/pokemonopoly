@@ -7,6 +7,22 @@ MonopolyTower_2F_EventScript_Jerome::
 	release
 	end
 
+MonopolyTower_2F_EventScript_Mohin::
+	lock
+	msgbox MonopolyTower_2F_Text_Mohin, MSGBOX_DEFAULT
+	release
+	end
+
+MonopolyTower_2F_Text_Mohin::
+	.string "A Wild MOHIN blocks your path.$"
+
 MonopolyTower_2F_EventScript_ItemQuickClaw::
 	finditem ITEM_QUICK_CLAW
+	setflag EVENT_QUICK_CLAW_FOUND
 	end
+
+MonopolyTower_Text_JeromeIntro::
+	.string "JEROME: Where the AGBs at?$"
+
+MonopolyTower_Text_JeromeOutro::
+	.string "JEROME: ...$"

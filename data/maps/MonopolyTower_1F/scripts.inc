@@ -56,3 +56,13 @@ MonopolyTower_Text_OmarIntro:
 	.string "beat us, you are wrong!\p"
 	.string "OMAR: We are the best!\p"
 	.string "OMAR: Anywys, smell you later dumb fuck.$"
+
+MonopolyTower_Text_IanIntro::
+	.string "IAN: I've been training\n"
+	.string "my whole life here!$"
+
+MonopolyTower_Text_IanOutro::
+	.string "IAN: I'm washed.$"
+
+MonopolyTower_Text_IanDefeated::
+	.string "IAN: I'll keep grinding.$"

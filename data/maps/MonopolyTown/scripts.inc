@@ -6,11 +6,14 @@ MonopolyTown_MapScripts::
 
 MonopolyTown_OnTransition::
 	map_script_2 NIK_HARSHI_LORE, 1, MonopolyTown_NikBattle_Trigger
-	releaseall
-	end
+	.2byte 0
 
 MonopolyTown_NikBattle_Trigger::
 	lock
+	playse SE_PIN
+	applymovement LOCALID_NIK, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 80
 	applymovement LOCALID_NIK, MonopolyTown_Nik_Confront
 	waitmovement 0
 	trainerbattle_single TRAINER_VICTOR, MonopolyTower_Text_IanIntro, MonopolyTower_Text_IanOutro, MonopolyTower_Nik_Set_Var
@@ -37,6 +40,7 @@ MonopolyTown_Map_EventScript_Nik::
     faceplayer
 	goto_if_unset FLAG_NIK_LORE, MonopolyTown_Map_EventScript_Nik_Lore
 	goto_if_eq NIK_HARSHI_LORE, 2, MonopolyTown_Nik_Outro
+	msgbox MonopolyTown_Nik_Outro_text_2, MSGBOX_NPC
 	releaseall
 	end	
 
@@ -49,6 +53,8 @@ MonopolyTown_Map_EventScript_Nik_Lore::
 	end
 
 MonopolyTown_Nik_Outro::
+	lock
+	faceplayer
 	msgbox MonopolyTown_Nik_Outro_text, MSGBOX_NPC
 	release
 	end
@@ -98,6 +104,9 @@ MonopolyTown_Text_Nik_Yes::
 
 MonopolyTown_Nik_Outro_text::
 	.string "NIK: sigh.. back to work.$"
+
+MonopolyTown_Nik_Outro_text_2::
+	.string "NIK: Please Visit my Shop!.$"
 
 MonopolyTown_DawatSign::
 	msgbox MonopolyTown_DawatSignText, MSGBOX_SIGN

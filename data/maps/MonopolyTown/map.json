@@ -151,15 +151,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 28,
-      "y": 11,
-      "elevation": 0,
-      "var": "NIK_HARSHI_LORE",
-      "var_value": "1",
-      "script": "MonopolyTown_NikBattle_Trigger"
-    }
+
   ],
   "bg_events": [
     {

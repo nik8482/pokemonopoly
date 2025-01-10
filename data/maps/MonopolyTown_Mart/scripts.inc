@@ -77,7 +77,7 @@ MonopolyTown_NikDefeated_Harshi_Text::
 	.string "HARSHI: You defeated Nik?\p"
 	.string "HARSHI: Thank God!\p"
 	.string "HARSHI: Hopefully he will finally\n"
-	.string "start doing some work\n"
+	.string "start doing some work\l"
 	.string "and I can finally get some rest.\p"
 	.string "HARSHI: Thank you\p"
 	.string "HARSHI: Since you are so strong\n"
